@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6c35df">
+  <title>HuellaAmiga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-page="home" aria-label="Ir al inicio">
+        <span class="brand-mark">🐾</span><span>Huella<span class="brand-green">Amiga</span></span>
+      </button>
+      <button class="avatar" data-page="profile" aria-label="Mi perfil">☺</button>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <nav class="bottom-nav" id="bottomNav" aria-label="Navegación principal">
+      <button data-page="home" class="nav-item active"><span>⌂</span>Inicio</button>
+      <button data-page="map" class="nav-item"><span>⌖</span>Mapa</button>
+      <button data-page="saved" class="nav-item"><span>♡</span>Guardados</button>
+      <button data-page="profile" class="nav-item"><span>♙</span>Perfil</button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
